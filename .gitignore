@@ -3,41 +3,84 @@
 # dependencies
 node_modules/
 
+# logs
+*.log
+*.log.*
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+pnpm-debug.*
+
+# coverage / tooling
+coverage/
+.nyc_output/
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+.turbo/
+
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
-expo-env.d.ts
-
-# Native
-.kotlin/
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
 
 # Metro
 .metro-health-check*
 
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
-.DS_Store
-*.pem
-
-# local env files
-.env*.local
-
-# typescript
+# TypeScript
 *.tsbuildinfo
 
-app-example
+# OS/editor
+.DS_Store
+*.swp
+*.swo
+*.tmp
+*.bak
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
 
-# generated native folders
-/ios
-/android
+# env
+.env*
+!.env.example
+
+# Native tooling
+.kotlin/
+*.orig.*
+*.pem
+*.p8
+*.p12
+*.key
+*.jks
+*.keystore
+*.mobileprovision
+*.hprof
+*.apk
+*.aab
+
+# Android
+android/.gradle/
+android/.idea/
+android/*.iml
+android/build/
+android/app/build/
+android/app/.cxx/
+android/.externalNativeBuild/
+android/app/src/main/assets/index.android.bundle
+android/local.properties
+android/**/captures/
+android/**/generated/
+android/**/intermediates/
+android/**/outputs/
+android/**/reports/
+android/**/tmp/
+
+# iOS (not used)
+ios/
+
+# samples
+app-example

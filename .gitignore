@@ -69,6 +69,7 @@ android/*.iml
 android/build/
 android/app/build/
 android/app/.cxx/
+android/app/*.keystore
 android/.externalNativeBuild/
 android/app/src/main/assets/index.android.bundle
 android/local.properties
